@@ -1,0 +1,23 @@
+language: cpp
+compiler:
+  - gcc
+env:
+  - NGINX_VERSION="1.7.4"
+#before_install:
+#  - sudo apt-get update -qq
+#  - sudo apt-get install -y gettext nasm
+install:
+  - curl -LO http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
+  - unzip nginx-${NGINX_VERSION}-src.zip
+  - cp -r nginx-${NGINX_VERSION}/* .
+  - rm -rf nginx-${NGINX_VERSION}*
+script:
+  - make
+# deploy:
+#   provider: releases
+#   api-key: "GITHUB OAUTH TOKEN"
+#   file: "FILE TO UPLOAD"
+#   skip_cleanup: true
+#   on:
+#     tags: true
+#     all_branches: true
