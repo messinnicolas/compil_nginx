@@ -18,6 +18,7 @@ Nginx is the must opensource web server
 %setup -n %{name}-%{version}
 
 %build
+cmake %{name}-%{version}
 
 %install
 mkdir -p %{buildroot}%{_libdir}/%{name}-%{version}-%{release}/
