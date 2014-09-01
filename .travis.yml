@@ -12,7 +12,8 @@ install:
   - rm -rf nginx-${NGINX_VERSION}*
 script:
   - cmake
-#  - make 
+  - cp nginx-${NGINX_VERSION}/
+  - make 
 # deploy:
 #   provider: releases
 #   api-key: "GITHUB OAUTH TOKEN"
