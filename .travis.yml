@@ -11,9 +11,9 @@ install:
   - cp -r nginx-${NGINX_VERSION}/* .
   - rm -rf nginx-${NGINX_VERSION}*
 script:
-  - mkdir build
+  - mkdir build target
   - cd build
-  - cmake
+  - cmake ../target
   - make 
 # deploy:
 #   provider: releases
