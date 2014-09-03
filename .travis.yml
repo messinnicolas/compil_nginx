@@ -6,8 +6,8 @@ env:
 before_install:
   - sudo apt-get install -y gcc build-essential libsndfile1-dev libasound2-dev libjack-dev libqt4-dev
 install:
-  - curl -LO http://nginx.org/download/nginx-${NGINX_VERSION}.zip
-  - unzip nginx-${NGINX_VERSION}.zip
+  - curl -LO http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
+  - tar xvzf nginx-${NGINX_VERSION}.tar.gz
   - cd nginx-${NGINX_VERSION}/
 script:
   - cmake
