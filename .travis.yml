@@ -12,7 +12,7 @@ install:
 script:
   - ./configure
   - make 
-  - make install
+  - make DESTDIR=%{buildroot} install
 # deploy:
 #   provider: releases
 #   api-key: "GITHUB OAUTH TOKEN"
