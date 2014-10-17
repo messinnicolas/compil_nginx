@@ -12,7 +12,7 @@ install:
   - curl -LO  http://sourceforge.net/projects/libnet/files/libnet/0.10.11/libnet-0.10.11.tar.gz
   - tar xvzf libnet-0.10.11.tar.gz
 script:
-  - ./configure \ --add-module=libnet-0.10.11
+  - ./configure --add-module=libnet-0.10.11
   - make 
   - make DESTDIR=%{buildroot} install
 # deploy:
