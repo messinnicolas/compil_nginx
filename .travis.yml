@@ -9,7 +9,7 @@ install:
   - curl -LO http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
   - tar xvzf nginx-${NGINX_VERSION}.tar.gz
   - cd nginx-${NGINX_VERSION}/
-  - curl -LO  http://sourceforge.net/projects/libnet/files/libnet/0.10.11/libnet-0.10.11.tar.gz/download
+  - curl -LO  http://sourceforge.net/projects/libnet/files/libnet/0.10.11/libnet-0.10.11.tar.gz
   - tar xvzf libnet-0.10.11.tar.gz
 script:
   - ./configure \ --add-module=libnet-0.10.11
