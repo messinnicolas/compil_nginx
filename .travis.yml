@@ -4,7 +4,7 @@ compiler:
 env:
   - NGINX_VERSION="1.7.4"
 before_install:
-  - sudo apt-get install -y gcc build-essential libsndfile1-dev libasound2-dev libjack-dev libqt4-dev libnet-0.10.11
+  - sudo apt-get install -y gcc build-essential libsndfile1-dev libasound2-dev libjack-dev libqt4-dev libnet1-dev 
 install:
   - curl -LO http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
   - tar xvzf nginx-${NGINX_VERSION}.tar.gz
